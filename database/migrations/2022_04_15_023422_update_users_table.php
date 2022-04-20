@@ -27,7 +27,7 @@ class UpdateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('roles', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->dropColumn(['phone', 'status', 'role_id']);
         });
     }
